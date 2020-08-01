@@ -3,6 +3,54 @@
 
     .blog-posts {
         .blog-post {
+            border-bottom: 1px solid rgba(181,164,109,.2);
+            margin-bottom: 5em;
+            padding-bottom: 5em;
+
+            a {
+                &:hover {
+                    text-decoration: none;
+                  }
+            }
+            
+
+            h1 {
+                -webkit-font-smoothing: antialiased;
+                text-align: center;
+                background: 0 0;
+                border: 0;
+                margin: 0 0 0.75em 0;
+                outline: 0;
+                padding: 0;
+                vertical-align: baseline;
+                text-decoration: none;
+                transition: color .2s ease-out;
+                font-family: inherit;
+                text-transform: inherit;
+                color: #000000;
+                font-size: 32px;
+                font-family: 'Lustria', serif;
+            }
+
+            h4 {
+                -webkit-font-smoothing: antialiased;
+                text-align: center;
+                font-family: Raleway,sans-serif;
+                font-size: 13px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 2em;
+                letter-spacing: .11em;
+                background: 0 0;
+                border: 0;
+                margin: 0 0 1em 0;
+                outline: 0;
+                padding: 0;
+                vertical-align: baseline;
+                text-decoration: none;
+                transition: color .2s ease-out;
+                color: inherit;
+            }
             
         }
     }

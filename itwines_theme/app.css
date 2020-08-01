@@ -16090,9 +16090,9 @@ header #main-menu li a:hover {
 }
 
 footer {
-  background: #000000;
+  background: #eee;
   width: 100%;
-  color: #ffffff;
+  color: #000000;
 }
 footer p {
   margin-bottom: 0;
@@ -16172,7 +16172,7 @@ footer #footer-socialmedia {
 }
 footer #footer-socialmedia i {
   margin: 0 0.25em;
-  color: #d3ced2;
+  color: #000000;
 }
 
 .woocommerce {
@@ -16731,6 +16731,51 @@ footer #footer-socialmedia i {
 .content-blog {
   padding: 152px 0 52px 0;
 }
+.content-blog .blog-posts .blog-post {
+  border-bottom: 1px solid rgba(181, 164, 109, 0.2);
+  margin-bottom: 5em;
+  padding-bottom: 5em;
+}
+.content-blog .blog-posts .blog-post a:hover {
+  text-decoration: none;
+}
+.content-blog .blog-posts .blog-post h1 {
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  margin: 0 0 0.75em 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+  font-family: inherit;
+  text-transform: inherit;
+  color: #000000;
+  font-size: 32px;
+  font-family: "Lustria", serif;
+}
+.content-blog .blog-posts .blog-post h4 {
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: 0.11em;
+  background: 0 0;
+  border: 0;
+  margin: 0 0 1em 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+  color: inherit;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   overflow-x: hidden;
@@ -16747,7 +16792,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .post-title-wrapper {
@@ -16790,6 +16835,23 @@ h1 {
 
 .content {
   padding-top: 3rem;
+}
+
+.content-contact h4 {
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  font-family: Lustria, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6em;
+  color: #000;
+  display: block;
+  margin: 45px 0 0;
 }
 
 .widget {
@@ -17226,18 +17288,33 @@ h1 {
   border-bottom: 1px solid black;
 }
 
-/*SWIPER */
-.swiper-container {
-  width: 100%;
-  height: 100%;
+#contant-contact-main {
+  padding: 152px 0 52px 0;
 }
 
-.swiper-slide {
+/*SWIPER */
+.content-contact {
+  margin: 0 0 5em 0;
+}
+.content-contact .grid-container {
+  width: 100%;
+  margin: 1em 0;
+}
+.content-contact .grid-container .swiper-container {
+  width: 100%;
+  min-height: 250px;
+}
+.content-contact .grid-container .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
+  cursor: pointer;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.content-contact .grid-container .swiper-slide img {
+  width: inherit;
+  max-height: 600px;
 }

@@ -39,9 +39,14 @@ get_post_thumbnail_id($page_id), 'single-post-thumbnail' -->
                  
                     <div class="blog-post">
                         <?php if(has_post_thumbnail()):?>
-                        <img src="<?php the_post_thumbnail_url('post_image');?>" class="img-fluid mb-5">
+                        <a href="<?php the_permalink();?>"><img src="<?php the_post_thumbnail_url('post_image');?>" class="img-fluid mb-5"></a>
 
                         <?php endif;?>
+                            <h4><?php
+                            foreach((get_the_category()) as $category) { 
+                                echo $category->cat_name . ' '; 
+                            } 
+                            ?></h4>
                         <a href="<?php the_permalink();?>"><h1><?php the_title();?></h1></a>
                     
                         <?php the_excerpt();?>

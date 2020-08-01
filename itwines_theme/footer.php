@@ -39,15 +39,31 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'progressbar',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+      slidesPerView: 2.1,
+      preloadImages: false,
+      lazy: true,
+      watchSlidesVisibility: true,
+      spaceBetween: 5,
+      autoplay: {
+        delay: 2000,
+    },
     });
+  </script>
+
+  <script>
+         (function($) {
+            $('a[href*="#"]').on('click', function (e) {
+            e.preventDefault()
+
+            $('html, body').animate(
+                {
+                scrollTop: $($(this).attr('href')).offset().top,
+                },
+                500,
+                'linear'
+            )
+            })
+        })(jQuery);
   </script>
 
 </body>

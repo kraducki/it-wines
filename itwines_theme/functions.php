@@ -95,6 +95,19 @@ register_sidebar(
 
 );
 
+//About Us sidebar
+register_sidebar(
+    array(
+        'name' => 'About Us Sidebar',
+        'id' => 'about-us-sidebar',
+        'class' => '',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+        
+    )
+
+);
+
 //Woocommerce sidebar
 register_sidebar(
     array(
